@@ -1,0 +1,6 @@
+{
+  "name": "Blackjack Research Engine",
+  "description": "A quantitative research engine and Monte Carlo simulator for mathematical blackjack analysis, card counting, and strategy verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
