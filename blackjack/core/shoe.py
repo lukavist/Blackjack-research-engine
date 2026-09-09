@@ -61,7 +61,9 @@ class Shoe:
             RuntimeError: If the shoe is completely empty.
         """
         if not self._cards:
-            # Defensive emergency reshuffle if cards are totally exhausted
+            # Cards are totally exhausted. The Shoe never auto-reshuffles mid-round
+            # (that would corrupt card-counting state), so callers must check
+            # `needs_reshuffle` between rounds and call `shuffle()` themselves.
             raise RuntimeError("Shoe is completely empty. Reshuffle required.")
 
         card = self._cards.pop()

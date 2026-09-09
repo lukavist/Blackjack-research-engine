@@ -124,6 +124,13 @@ OK
 ## Interactive Web Dashboard Features
 
 ### Tab 1: Interactive Sandbox & Live HUD
+- **Persistent Bankroll & Multi-Session Ledger**:
+  - **Persistent Bankroll State**: Tracks real player funds across browser reloads and multiple sessions using `localStorage`.
+  - **Cumulative Profit / Loss Tracker**: Real-time display of total dollar gain/loss and overall Return on Investment (ROI %) across all completed sandbox rounds.
+  - **Peak Bankroll & Drawdown**: Records high-water mark and current drawdown to analyze bankroll preservation during negative variance runs.
+  - **Total Volume Wagered & Round Count**: Tracks cumulative cumulative wagering volume across sessions.
+  - **Chip Sizing & Advantage Sizing**: Quick casino chip selectors ($5, $10, $25, $50, $100, $250), custom input, and one-click "Match Hi-Lo Bet" button linking the current True Count advantage directly to the table bet.
+  - **Reload & Reset Controls**: One-click `+$500 Reload` and `Reset to $1,000` baseline controls.
 - **Casino Felt & Card Mechanics**: Complete dealing lifecycle with natural blackjacks, split hands, double downs, late surrender, and dealer soft-17 rules.
 - **Hi-Lo Observer HUD**:
   - **Running Count (RC)**: Live update with zero hole-card leakage.
@@ -133,7 +140,7 @@ OK
   - **Bet Sizing Advisor**: Recommended unit spread based on current True Count.
 - **Real-Time Strategy Advisor**: Dynamically evaluates the player's active hand against the dealer's upcard, recommending the mathematically optimal action (`HIT`, `STAND`, `DOUBLE`, `SPLIT`, `SURRENDER`) and highlighting when an **Illustrious 18 deviation** overrides basic strategy.
 - **Rules Configuration Panel**: Adjust number of decks (1–8), penetration (50%–90%), Dealer Soft 17 (S17 vs. H17), Double After Split (DAS), Late Surrender (LS), and Insurance options on the fly.
-- **Round Trace Log**: Complete chronological audit log of each deal, hit, stand, count update, and settlement.
+- **Round Trace Log**: Complete chronological audit log of each deal, hit, stand, count update, and settlement with multi-session ledger balances.
 
 ### Tab 2: Strategy & Deviations Matrix
 - **Complete Basic Strategy Charts**: Visual color-coded matrices for:
